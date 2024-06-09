@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+/* ---body------------------------------- */
+html{
+    font-size: 100%;
+}
+
+.wrapper{
+    text-align: center;
+    max-width: 1980px;
+    margin-bottom: px;
+    padding: 0 10px;
+}
+#title{
+    align-items: center;
+    padding: 25px 0 10px 0;
+}
+h1{
+    font-size: 2rem;
+    height: 100px;
+}
+h2{
+    border-bottom: solid 1px ;
+}
+/* ---header------------------------------- */
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+#header{
+    background-color: #c8c8c8;
+}
+nav ul{
+    height: 100px;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    justify-content: end;
+}
+li{
+    list-style: none;
+    padding: 0 50px;
+    padding-right: 50px;
+}
+
+/* ---profile------------------------------- */
+
+#profile{
+    text-align: center;
+    margin: 0 auto;
+}
+#profile img{
+    width: 500px;
+    height: 700px;
+    object-fit: fill;
+}
+section{
+    margin-bottom: 50px;
+}
+.button{
+    height: 50px;
+    width: 100px;
+    
+}
+
+/* ---protfolio------------------------------- */
+
+
+#portfolio{
+    width: 30%;
+    text-align: center;
+}
+#portfolio img{
+    width: 100%;
+}
+a{
+    text-align: start;
+}
+
+.content{
+    display: grid;
+}
+.READMORE{
+    display: inline-block;
+    border:  solid 1px;
+}
+.READMORE:hover{
+    opacity: 0.7;
+}
+
+/* ---blog------------------------------- */
+
+#blog{
+    width: 30%;
+    text-align: center;
+}
+#blog img{
+    width: 100%;
+}
+
+/* ---footer------------------------------- */
+
+
+#footer{
+    text-align: center;
+    background-color: #c8c8c8;
+    color: #fff;
+}
