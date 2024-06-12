@@ -3,6 +3,7 @@
 /* ---body------------------------------- */
 html{
     font-size: 100%;
+    background-color: #b8d4dc;
 }
 
 .wrapper{
@@ -16,21 +17,27 @@ html{
     padding: 25px 0 10px 0;
 }
 h1{
-    font-size: 2rem;
+    font-size: 3rem;
     height: 100px;
 }
 h2{
+    font-size: 2rem;
     border-bottom: solid 1px ;
 }
 /* ---header------------------------------- */
 a{
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 1.2rem;
 }
 #header{
-    background-color: #c8c8c8;
+    background-color: #2b2b2b;
 }
+
+nav{
+    margin-bottom: 150px;
+}
+
 nav ul{
     height: 100px;
     align-items: center;
@@ -84,7 +91,8 @@ a{
 }
 .READMORE{
     display: inline-block;
-    border:  solid 1px;
+    border:  solid 1px #000000;
+    padding: 10px 10px;
 }
 .READMORE:hover{
     opacity: 0.7;
@@ -107,4 +115,16 @@ a{
     text-align: center;
     background-color: #c8c8c8;
     color: #fff;
+}
+
+
+
+
+/* ----SP---------------------------------------- */
+
+
+@media screen and (max-width: 480px) {
+
+
+
 }
