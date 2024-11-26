@@ -1,10 +1,5 @@
 console.log('hello');
 
-
-
-const
-console.log('hello');
-
 const title = document.querySelector('#title');
 
 //const keyframes = {
