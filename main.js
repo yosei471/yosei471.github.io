@@ -2,16 +2,16 @@ console.log('hello');
 
 const title = document.querySelector('#title');
 
-//const keyframes = {
-   // opacity: [0, 1],
-    //translate:['0 10px',0],
-//};
+const keyframes = {
+    opacity: [0, 1],
+    translate:['0 10px',0],
+};
 
-//title.animate(keyframes, 3000);
+title.animate(keyframes, 3000);
 
-//const image = document.querySelector('#image');
+const image = document.querySelector('#image');
 
-//image.animate(keyframes, 3000);
+image.animate(keyframes, 3000);
 
 
 const showimage = (entries) => {
