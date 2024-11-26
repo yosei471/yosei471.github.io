@@ -215,6 +215,7 @@ h4{
 }
 .article p{
     align-items: center;
+    display: grid;
 }
 
 /* ---footer------------------------------- */
