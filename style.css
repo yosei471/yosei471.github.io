@@ -1,179 +1,152 @@
-html{
-    height: 2890px;
-    padding: 80px;
+@charset "utf-8";
 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+html, body main{
+    font-family: Arial, sans-serif;
+  }
+
+html{
+    background-color: rgb(216, 173, 173);
+    margin: 0 128px 0 128px;
 }
 
 body{
-    background-image: url(img/Rectangle\ 1\ \(1\).jpg);
-    background-size: 100%;
-    background-attachment: fixed;
-    margin: 0;
+    background-color: rgb(189, 220, 220);
 }
-body,p,ul,td,th{
-    margin: inherit;
-    padding: inherit;
-}
-.wrapper{
-    margin-top: 300px;
-}
-#top{
+
+/* header */
+header{
     display: flex;
     justify-content: space-between;
 }
-h1{
-    margin: 0;
+.logo{
+    margin: 30px 0 30px 40px;
 }
-h1 img{
-    width: 500px;
-    height: 100px;
+.logo img:nth-child(2){
+    width: 250px;
+    height: 80px;
 }
-h2{
-    font-size: 3rem;
-    color: rgb(0, 13, 128);
-    text-decoration: underline;
-}
-
-
-.icon{
+nav ul{
+    margin-top: 40px;
     display: flex;
     justify-content: end;
-    align-items: center;
 }
-.icon li{
-    margin-left: 140px;
-}
-.icon img{
-    width: 50px;
-    height: 40px;
-}
-
-#name{
-    text-align: center;
-}
-
-#name img{
-    margin-top: 150px;
-    width: 500px;
-}
-
-
-
-
-header {
-    position: relative;
-    width: 100%;
-    top: 0;
-    z-index: 10000;
-  }
 nav ul li{
-    margin: 0;
-}
-ul{
-    display: flex;
-    justify-content: space-between;
-}
-li{
     list-style: none;
+    margin-right: 20px;
 }
-a{
+nav ul li a{
     text-decoration: none;
-    color: rgb(0, 13, 128);
-}
-a:hover{
-    opacity: 0.5;
-    border-bottom: 3px solid;
-}
-#profile h2{
-    margin-left: 100px;
-}
-#profile img{
-    width: 500px;
-    margin-left: 300px;
-}
-.profile-text{
-    background-color: rgb(74, 193, 193);
-    color: #fff;
-    margin: 0 0 0 auto;
-    width: 700px;
-    height: 300px;
-    position: absolute;
-    top: 1600px;
-    left:   800px;
-    align-items: center;
-    padding-left: 20px;
-    border-radius: 10px 10px 10px 10px;
-    opacity: 0.9;
+    color: #4c4c4c;
 }
 
-.portfolio-ul{
-    display: flex;
-    justify-content: space-between;
-}
 
-.portfolio-ul img{
-    width: 450px;
-    height: 450px;
-    object-fit: cover;
+/* main */
+main{
+    background-color: #4c4c4c;
 }
-#portfolio h2{
-    text-align: end;
-    margin-right: 100px;
-}
-.portfolio-ul li{
-    margin-left: 0;
-}
-#portfolio button{
-    text-align: center;
-}
-
-.fixed {
-    position: fixed;
+main img{
     width: 100%;
-    top: 0;
-    z-index: 1000;
-}
-#blog h2{
-    margin-left: 100px;
-}
-#blog dl{
-    text-align: center;
-    padding: 50px;
-    border: 3px;
-}
-#blog dl dt{
-    padding: 20px;
+    height: auto;
 }
 
-#contact{
+.main-image1 img{
+    object-fit: contain;
+    width: 100%;
+}
+.main-logo{
+    position: absolute;
+    top: 400px;
+    left: 200px;
+}
+
+
+/* section1 */
+.content{
+    margin-top: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
-    margin: 100px 0 100px 0;
 }
-form{
-    margin: 100px 0 100px 0;
-    align-items: center;
-}
-form div{
-    margin: 100px 0 100px 0;
-}
-.mailadress{
-    margin-right: 82px;
-}
-#maintext{
-    margin-bottom: 100px;
-}
-textarea{
+.content div{
     width: 300px;
-    height: 300px;
+    margin: 0 100px;
 }
-#submit{
+.content div:nth-child(4){
     margin-top: 100px;
 }
-#footer{
+.content img,h2{
+    margin: 20px 0;
+}
+.btn{
+    margin-top: 20px;
+}
+
+/* section3 */
+article{
     text-align: center;
-    padding-top: 40px;
-    height: 100px;
-    background-color: rgb(157, 176, 183);
-    margin: 0 calc(50% - 50vw);
-    width: 100vw;
-  }
+}
+.article{
+    margin-top: 150px;
+}
+.article div{
+    margin: 20px 0;
+}
+
+
+
+/* info */
+.factor{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.factor div{
+    margin: 0 20px;
+}
+.info{
+    display: flex;
+}
+.info img{
+    width: 40vw;
+}
+.news img{
+    width: 100px;
+}
+.blog img{
+        width: 100px;
+}
+.blog-text{
+    display: flex;
+}
+/* footer */
+
+#footer{
+    display: grid;
+    height: 700px;
+}
+.footer-menu{
+    display: flex;
+}
+.copy{
+    text-align: center;
+    height: 0;
+    align-items: center;
+}
+.footer-end{
+    display: flex;
+    justify-content: center;
+}
+.footer-end img{
+    margin: 0 20px;
+    width: 30px;
+    height: 25px;
+}
