@@ -12,13 +12,10 @@ html, body main{
   }
 
 html{
-    background-color: rgb(216, 173, 173);
     margin: 0 128px 0 128px;
+        max-width: 1980px;
 }
 
-body{
-    background-color: rgb(189, 220, 220);
-}
 
 /* header */
 header{
@@ -65,19 +62,35 @@ main img{
     top: 400px;
     left: 200px;
 }
-
+.main-logo img{
+    width: 700px;
+}
+.app{
+    position: absolute;
+    top: 700px;
+    left: 250px;
+}
+.app img{
+    width: 240px;
+}
+.google{
+    position: absolute;
+    top: 700px;
+    left: 550px;
+}
 
 /* section1 */
 .content{
-    margin-top: 150px;
+    margin-top: 0px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
 }
 .content div{
-    width: 300px;
+    width: 340px;
     margin: 0 100px;
+    margin-top: 200px;
 }
 .content div:nth-child(4){
     margin-top: 100px;
@@ -90,11 +103,12 @@ main img{
 }
 
 /* section3 */
-article{
-    text-align: center;
-}
 .article{
+    text-align: center;
     margin-top: 150px;
+}
+.article p{
+    text-align: center;
 }
 .article div{
     margin: 20px 0;
@@ -104,29 +118,72 @@ article{
 
 /* info */
 .factor{
-    margin-top: 50px;
+    margin-top: 150px;
+    padding: 0 150px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
+    background-color: #fff;
 }
 .factor div{
     margin: 0 20px;
 }
 .info{
     display: flex;
+    width: 100%;
+    margin-top: 150px;
+}
+.info article{
+    width: 100%;
 }
 .info img{
-    width: 40vw;
+    width: 900px;
 }
-.news img{
-    width: 100px;
-}
-.blog img{
-        width: 100px;
+.blog{
+    padding: 100px;
 }
 .blog-text{
     display: flex;
 }
+.blog h3{
+    text-align: left;
+    padding: 20px 0;
+}
+.news{
+    display: grid;
+}
+.news1{
+    display: flex;
+    padding: 50px 0;
+}
+.news1 img{
+    width: 200px;
+    height: 200px;
+}
+.news1-text{
+    width: 30vw;
+    text-align: left;
+    line-height: 50px;
+    margin: 20px 20px 0 20px;
+    
+}
+.news2{
+    display: flex;
+    padding: 50px 0;
+}
+.news2 img{
+    width: 200px;
+    height: 200px;
+}
+.news2-text{
+    width: 30vw;
+    text-align: left;
+    line-height: 50px;
+    margin: 20px 20px 0 20px;
+}
+
+
+
 /* footer */
 
 #footer{
@@ -134,7 +191,16 @@ article{
     height: 700px;
 }
 .footer-menu{
+    margin-top: 100px;
     display: flex;
+    justify-content: space-between;
+}
+.footer-menu h2,p{
+    text-align: left;
+}
+.footer-menu p{
+    padding-bottom: 14px;
+    color: #4c4c4c;
 }
 .copy{
     text-align: center;
