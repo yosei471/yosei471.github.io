@@ -14,8 +14,12 @@ html, body main{
 html{
     margin: 0 128px 0 128px;
         max-width: 1980px;
+        background-color: #c2c5cb;
 }
-
+body{
+    background-color: rgb(255, 255, 255);
+    position: relative;
+}
 
 /* header */
 header{
@@ -34,6 +38,11 @@ nav ul{
     display: flex;
     justify-content: end;
 }
+nav ul li:nth-child(1){
+    display: inline;
+    align-items: center;
+}
+
 nav ul li{
     list-style: none;
     margin-right: 20px;
@@ -45,52 +54,58 @@ nav ul li a{
 
 
 /* main */
-main{
-    background-color: #4c4c4c;
-}
-main img{
-    width: 100%;
-    height: auto;
-}
 
-.main-image1 img{
-    object-fit: contain;
+.mainvisual{
+    background-color: #4c4c4c;
+    padding-top:  62.5%;
     width: 100%;
+    background-image:url('img/AdobeStock_283341560\ 2.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 999;
+
 }
 .main-logo{
     position: absolute;
-    top: 400px;
-    left: 200px;
+    top: 10%;
+    left: 5%;
+    width: 40vw;
 }
 .main-logo img{
-    width: 700px;
+    width: 100%;
+    box-sizing: border-box;
 }
 .app{
     position: absolute;
-    top: 700px;
-    left: 250px;
+    top: 15%;
+    left: 5%;
 }
 .app img{
-    width: 240px;
+    width: 14vw;
 }
 .google{
     position: absolute;
-    top: 700px;
-    left: 550px;
+    top: 15%;
+    left: 27%;
+}
+.google img{
+    width: 16vw;
 }
 
 /* section1 */
 .content{
-    margin-top: 0px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     text-align: center;
 }
 .content div{
-    width: 340px;
-    margin: 0 100px;
+    width: 30%;
+    margin: auto;
     margin-top: 200px;
+
 }
 .content div:nth-child(4){
     margin-top: 100px;
@@ -98,20 +113,36 @@ main img{
 .content img,h2{
     margin: 20px 0;
 }
+.content p{
+    text-align: center;
+}
 .btn{
     margin-top: 20px;
+    width: 100px;
+    height: 30px;
+    color: #000;
+}
+.btn a{
+    text-decoration: none;
+    color: #000;
 }
 
 /* section3 */
+#article{
+    background-color: #e4e8f0;
+}
 .article{
     text-align: center;
-    margin-top: 150px;
+    margin-top: 100px;
 }
 .article p{
     text-align: center;
 }
 .article div{
     margin: 20px 0;
+}
+.article h2{
+    padding-top: 100px;
 }
 
 
@@ -123,10 +154,14 @@ main img{
     display: flex;
     justify-content: space-between;
     text-align: center;
-    background-color: #fff;
+    background-color: #e4e8f0;
 }
 .factor div{
     margin: 0 20px;
+}
+.factor img{
+    width: 100%;
+    margin-bottom: 50px;
 }
 .info{
     display: flex;
@@ -137,49 +172,49 @@ main img{
     width: 100%;
 }
 .info img{
-    width: 900px;
+    width: 40vw;
 }
-.blog{
-    padding: 100px;
-}
+
 .blog-text{
     display: flex;
 }
 .blog h3{
     text-align: left;
-    padding: 20px 0;
+    padding: 20px 0 20px 50px;
 }
 .news{
     display: grid;
 }
 .news1{
     display: flex;
-    padding: 50px 0;
+    margin: 50px 0;
 }
 .news1 img{
-    width: 200px;
-    height: 200px;
+    margin-left: 50px;
+    width: 50%;
+    height: 50%;
 }
 .news1-text{
-    width: 30vw;
+    width: 100%;
     text-align: left;
     line-height: 50px;
-    margin: 20px 20px 0 20px;
+    padding-left: 50px;
     
 }
 .news2{
     display: flex;
-    padding: 50px 0;
+    margin: 50px 0;
 }
 .news2 img{
-    width: 200px;
-    height: 200px;
+    margin-left: 50px;
+    width: 50%;
+    height: 50%;
 }
 .news2-text{
-    width: 30vw;
+    width: 100%;
     text-align: left;
     line-height: 50px;
-    margin: 20px 20px 0 20px;
+    padding-left: 50px;
 }
 
 
@@ -194,6 +229,7 @@ main img{
     margin-top: 100px;
     display: flex;
     justify-content: space-between;
+    margin: 0 50px;
 }
 .footer-menu h2,p{
     text-align: left;
@@ -216,3 +252,64 @@ main img{
     width: 30px;
     height: 25px;
 }
+
+/* responsive */
+@media screen and (max-width: 1330px){
+    header{
+        display: grid;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    nav{
+        display: none;
+    }
+    .main-logo, .app,.google{
+        display: none;
+    }
+    .mainvisual{
+        margin-top: 100px;
+    }
+    .content{
+        display: grid;   
+    }
+    .content div{
+        width: 100%;
+        margin-top: 100px;
+
+    }
+    .article{
+        padding-bottom: 100px;
+    }
+    .factor{
+        display: none !important;
+ 
+    }
+    .footer-menu{
+        display: grid;
+    }
+    .footer-menu p{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    * {
+        margin: 0;
+        padding: 0;
+      }
+      body{
+        min-width: 480px;
+    }
+
+
+
+
+
+  }
