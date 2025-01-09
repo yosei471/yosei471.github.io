@@ -12,7 +12,7 @@ html, body main{
   }
 
 html{
-    margin: 0 128px 0 128px;
+    /* margin: 0 128px 0 128px; */
         max-width: 1980px;
         background-color: #c2c5cb;
 }
@@ -304,9 +304,7 @@ nav ul li a{
         margin: 0;
         padding: 0;
       }
-      body{
-        min-width: 480px;
-    }
+
 
 
 
