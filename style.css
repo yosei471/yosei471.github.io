@@ -12,7 +12,6 @@ html, body main{
   }
 
 html{
-    /* margin: 0 128px 0 128px; */
         max-width: 1980px;
         background-color: #c2c5cb;
 }
@@ -27,7 +26,8 @@ header{
     justify-content: space-between;
 }
 .logo{
-    margin: 30px 0 30px 40px;
+    /* margin: 30px 0 30px 40px; */
+    padding: 10px 0;
 }
 .logo img:nth-child(2){
     width: 250px;
@@ -199,7 +199,6 @@ nav ul li a{
     text-align: left;
     line-height: 50px;
     padding-left: 50px;
-    
 }
 .news2{
     display: flex;
@@ -267,15 +266,17 @@ nav ul li a{
         margin: 0;
         padding: 0;
     }
+    /* header{
+        display: flex;
+        text-align: center;
+    } */
     nav{
         display: none;
     }
     .main-logo, .app,.google{
         display: none;
     }
-    .mainvisual{
-        margin-top: 100px;
-    }
+
     .content{
         display: grid;   
     }
@@ -291,12 +292,20 @@ nav ul li a{
         display: none !important;
  
     }
+    .info{
+        display: grid;
+      }
+    .info img{
+        width: 100%;
+      }
     .footer-menu{
         display: grid;
+        justify-content: center;
     }
     .footer-menu p{
         display: none;
     }
+    
 }
 
 @media screen and (max-width: 480px) {
@@ -304,10 +313,59 @@ nav ul li a{
         margin: 0;
         padding: 0;
       }
+      header{
+        display: flex;
+        justify-content: start;
+      }
+      .logo{
+        display: inline;
+        justify-content: left;
+      }
+      .news1{
+        align-items: center;
+        text-align: center;
+        display: grid;
+      }
+      /* .news1 img{
+        display: none;
+      }
+      .news2 img{
+        display: none;
+      } */
+      .news2{
+        align-items: center;
+        text-align: center;
+        display: grid;
 
-
-
-
-
-
+      }
+      .copy{
+        width: 100%;
+      }
+      .blog h3{
+        text-align: center;
+        padding: 0 ;
+    }
+    .news1{
+        display: grid;
+    }
+    .news1 img{
+        display: none;
+    }
+    .news1-text{
+        text-align: left;
+        line-height: 50px;
+    }
+    .news2{
+        display: grid;
+    }
+    .news2 img{
+        display: none;
+    }
+    .news2-text{
+        text-align: left;
+        line-height: 50px;
+    }
+    .footer-end{
+        justify-content: center;
+    }
   }
