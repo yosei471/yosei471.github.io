@@ -1,377 +1,422 @@
-@charset "utf-8";
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-html, body main{
-    font-family: Arial, sans-serif;
-  }
-
 html{
-        max-width: 1980px;
-        background-color: #c2c5cb;
-}
-body{
-    background-color: rgb(255, 255, 255);
-    position: relative;
+    /* background-color: #a2b1e5; */
+    width: 100%;
+    margin: 0 auto;
 }
 
-/* header */
+body{
+    margin-top: 120px;
+    width: 100%;
+    padding: 0 4px;
+    font-family: YakuHanJP_Noto, 'Outfit', Futura,'Noto Sans JP', Roboto, sans-serif;
+}
+
+h2{
+    width: 100%;
+    font-size: 2.5rem;
+    padding: 5px 0; 
+    color: #2862a9;
+}
+h3{
+    width: 50%;
+    font-size: 1rem;
+    padding: 0 0 15px 0;
+    color: #484848;
+}
+li{
+    color: #484848;
+}
+a{
+    text-decoration: none;
+    color: #484848;
+}
+p{
+    color: #484848;
+}
+.wrapper{
+    width: 100%;
+}
+
+button{
+    margin: 30px 0;
+    width: 70%;
+    padding: 10px;
+    background: linear-gradient(90deg, #72BBCA 0%, #2844A9 100%);
+    color: #fff;
+    text-align: left;
+    border: none;
+}
 header{
     display: flex;
     justify-content: space-between;
+    background-color: #fff;
+    width: 100%;
+    height: 120px;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    opacity: 0.9;
 }
-.logo{
-    /* margin: 30px 0 30px 40px; */
-    padding: 10px 0;
+header img{
+    width: 10%;
+    object-fit: cover;
+    margin-left: 10px;
 }
-.logo img:nth-child(2){
-    width: 250px;
-    height: 80px;
+nav{
+    height: 100%;
 }
 nav ul{
-    margin-top: 40px;
     display: flex;
-    justify-content: end;
-}
-nav ul li:nth-child(1){
-    display: inline;
-    align-items: center;
-}
-
-nav ul li{
-    list-style: none;
-    margin-right: 20px;
-}
-nav ul li a{
-    text-decoration: none;
-    color: #4c4c4c;
-}
-
-
-/* main */
-
-.mainvisual{
-    background-color: #4c4c4c;
-    padding-top:  62.5%;
+    height: 100%;
+    margin: auto 0;
     width: 100%;
-    background-image:url('img/AdobeStock_283341560\ 2.png');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: 999;
-
 }
-.main-logo{
+header ul li{
+    list-style: none;
+    margin-left: 30px;
+    padding-top: 45px;
+    font-weight: bold;
+}
+.contactBG{
+    background: linear-gradient(90deg, #72BBCA 0%, #2844A9 100%);
+    text-align: center;
+}
+header a{
+    height: 100%;
+    padding: 0 10px;
+    color: rgb(20, 20, 20);
+    font-weight: bold;
+    text-decoration: none;
+}
+#main{
+    width: 100vw;
+}
+.mainvisuail{
+    background-image: url(img/AdobeStock_283341560\ 2.png);
+    width: 80%;
+    height:1000px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 0 0 auto;
+    position: relative;
+}
+.colorbg{
+    background-color: #72BBCA;
+    z-index: 99;
+}
+h1{
+    font-size: 8rem;
+    letter-spacing: 0.2rem;
+    line-height: 1.4;
+    width: 80%;
     position: absolute;
     top: 10%;
-    left: 5%;
-    width: 40vw;
+    left: -10%;
 }
-.main-logo img{
-    width: 100%;
-    box-sizing: border-box;
-}
-.app{
-    position: absolute;
-    top: 15%;
-    left: 5%;
-}
-.app img{
-    width: 14vw;
-}
-.google{
-    position: absolute;
-    top: 15%;
-    left: 27%;
-}
-.google img{
-    width: 16vw;
-}
+/* .mainvisual{
+    background-image: url(img/AdobeStock_283341560\ 2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 80%;
+    margin: 0 0 0 auto;
+} */
 
-/* section1 */
-.content{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    text-align: center;
-}
-.content div{
-    width: 30%;
-    margin: auto;
-    margin-top: 200px;
-
-}
-.content div:nth-child(4){
-    margin-top: 100px;
-}
-.content img,h2{
-    margin: 20px 0;
-}
-.content p{
-    text-align: center;
-}
-.btn{
-    margin-top: 20px;
-    width: 100px;
-    height: 30px;
-    color: #000;
-}
-.btn a{
-    text-decoration: none;
-    color: #000;
-}
-
-/* section3 */
-#article{
-    background-color: #e4e8f0;
-}
-.article{
-    text-align: center;
-    margin-top: 100px;
-}
-.article p{
-    text-align: center;
-}
-.article div{
-    margin: 20px 0;
-}
-.article h2{
-    padding-top: 100px;
-}
-
-
-
-/* info */
-.factor{
-    margin-top: 150px;
-    padding: 0 150px;
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    background-color: #e4e8f0;
-}
-.factor div{
-    margin: 0 20px;
-}
-.factor img{
-    width: 100%;
-    margin-bottom: 50px;
-}
-.info{
-    display: flex;
-    width: 100%;
-    margin-top: 150px;
-}
-.info article{
-    width: 100%;
-}
-.info img{
-    width: 40vw;
-}
-
-.blog-text{
-    display: flex;
-}
-.blog h3{
-    text-align: left;
-    padding: 20px 0 20px 50px;
-}
-.news{
-    display: grid;
-}
-.news1{
-    display: flex;
-    margin: 50px 0;
-}
-.news1 img{
-    margin-left: 50px;
-    width: 50%;
-    height: 50%;
-}
-.news1-text{
-    width: 100%;
-    text-align: left;
-    line-height: 50px;
-    padding-left: 50px;
-}
-.news2{
-    display: flex;
-    margin: 50px 0;
-}
-.news2 img{
-    margin-left: 50px;
-    width: 50%;
-    height: 50%;
-}
-.news2-text{
-    width: 100%;
-    text-align: left;
-    line-height: 50px;
-    padding-left: 50px;
-}
-
-
-
-/* footer */
-
-#footer{
-    display: grid;
-    height: 700px;
-}
-.footer-menu{
-    margin-top: 100px;
-    display: flex;
-    justify-content: space-between;
-    /* margin: 0 auto; */
-}
-.footer-menu h2,p{
-    text-align: left;
-}
-.footer-menu p{
-    padding-bottom: 14px;
-    color: #4c4c4c;
-}
-.copy{
-    text-align: center;
-    height: 0;
-    align-items: center;
-}
-.footer-end{
+.main2{
     display: flex;
     justify-content: center;
+    margin-top: 100px;
+    width: 100%;
 }
-.footer-end img{
-    margin: 0 20px;
-    width: 30px;
-    height: 25px;
-}
-
-/* responsive */
-@media screen and (max-width: 1330px){
-    header{
-        display: grid;
-        justify-content: center;
-        text-align: center;
-    }
+.maintext{
+    width: 500px;
+    padding-top: 200px;
 }
 
-@media screen and (max-width: 1000px){
-    *{
-        margin: 0;
-        padding: 0;
-    }
-    /* header{
-        display: flex;
-        text-align: center;
-    } */
-    nav{
-        display: none;
-    }
-    .main-logo, .app,.google{
-        display: none;
-    }
+.mainimg{
+    display: flex;
+    align-items: center;
+    width: 30%;
+    height: 800px;
+    padding: 50px;
+    position: relative;
+}
+.mainimg img{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+.ABOUTUS{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px; 
+    height: 500px;
+}
+.ABOUTUS div{
+    width: 50%;
+    height: 100%;
+}
+.ABOUTUS img{
+    width: 100%;
+}
 
-    .content{
-        display: grid;   
-    }
-    .content div{
-        width: 100%;
-        margin-top: 100px;
+.about{
+    width: 50%;
+    align-items: center;
+    padding: 100px 0 0 50px ;
+}
+.PRODUCT{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+    padding: 0 100px;
+}
+.product{
+    width: 300px;
+}
+.PRODUCTimg{
+    width: 500px;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+.PRODUCTimg img{
+    width: 50%;
+    padding: 10px;
+    height: auto;
+}
 
-    }
-    .article{
-        padding-bottom: 100px;
-    }
-    .factor{
-        display: none !important;
- 
-    }
-    .info{
-        display: grid;
-      }
-    .info img{
-        width: 100%;
-      }
-    .footer-menu{
-        display: grid;
-        justify-content: center;
-    }
-    .footer-menu p{
-        display: none;
-    }
+.OURSERVICE{
+    background-color: rgb(215, 235, 235);
+    padding: 50px 100px 50px 100px;
+    text-align: center;
+}
+.SERVICEimg{
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+.SERVICEimg img{
+    padding: 10px;
+}
+.RECRUIT{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.recruit{
+    padding: 50px;
+    width: 20%;
+}
+.NEWS{
+    display: flex;
+    margin-top: 100px;
+}
+footer{
+    background-color: #e5e9ef;
+}
+.footercontent{
+    width: 100%;
+}
+
+.footerlogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.footerlogo img{
+    width: 8%;
+    height: 60%;
+}
+.footerlogo p{
+    padding-left: 50px;
+    width: 40%;
+    align-items: center;
+}
+.footermenu{
+    display: flex;
+    justify-content: center;
     
 }
-
-@media screen and (max-width: 480px) {
-    * {
-        margin: 0;
-        padding: 0;
-      }
-      header{
-        display: flex;
-        justify-content: start;
-      }
-      .logo{
-        display: inline;
-        justify-content: left;
-      }
-      .news1{
-        align-items: center;
-        text-align: center;
-        display: grid;
-      }
-      /* .news1 img{
-        display: none;
-      }
-      .news2 img{
-        display: none;
-      } */
-      .news2{
-        align-items: center;
-        text-align: center;
-        display: grid;
-
-      }
-      .copy{
+.footermenu ul{
+    margin: 0 30px 100px 30px;
+}
+.footermenu ul li{
+    list-style: square;
+}
+.footermenu h3{
+    width: 150px;
+}
+.footerend{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 500px;
+    height: 150px;
+    align-items: center;
+}
+.content a{
+    margin-left: 20px;
+}
+#CONTACTUS{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(215, 224, 235);
+    width: 100%;
+    height: 250px;
+    padding: 50px 0;
+}
+#CONTACTUS{
+    width: 80%;
+}
+.CONTACTUS h2,h3,p{
+    width: 100%;
+}
+.TELL{
+    display: flex;
+    margin-left: 150px;
+    width: 500px;
+}
+.TELL img{
+    width: 20%;
+    height: 50%;
+}
+.TELL h2{
+    margin-left: 20px;
+    width: 100%;
+}
+@media (max-width: 1000px) {
+    header{
+        margin-right: 0;
+    }
+    body{
+        margin-top: 0;
+        padding: 0 10px;
+        }
+    h2{
+        font-size: 1.5rem;
         width: 100%;
-      }
-      .blog h3{
+    }
+    .mainvisuail{
+        width: 80%;
+    }
+    .mainvisuail h1{
+        font-size: 6rem;
+        margin-top: 150px;
+        width: 100%;
+    }
+    nav ul{
+        display: none;
+    }
+    .main2{
+        display: grid;
+        margin-top: 0;
+    }
+    .mainimg{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        padding: 0;
+        margin-top: 0;  
+    }
+    .mainimg img{
+        width: 80%;
+    }
+    .ABOUTUS{
+        display: grid;
         text-align: center;
-        padding: 0 ;
+        width: 100%;
+        height: auto;
     }
-    .news1{
+    .ABOUTUS div{
+        width: 100%;
+        
+    }
+    .about{
+        text-align: center;
+        /* width: 90%; */
+        padding: 0;
+    }
+    .PRODUCT{
+        width: 100%;
+        display:flex;
+        flex-direction: column-reverse;
+        padding: 0;
+
+    }
+    .PRODUCT img{
+        padding: 2px;
+        width: 50%;
+        
+    }
+    .OURSERVICE{
+        margin-top: 50px;
+        width: 100%;
+        padding: 0;
+    }
+    .OURSERVICE div{
+        width: 100%;
         display: grid;
     }
-    .news1 img{
-        display: none;
-    }
-    .news1-text{
-        text-align: left;
-        line-height: 50px;
-    }
-    .news2{
+    .RECRUIT{
         display: grid;
+        width: 100%;
+        margin: 0;
     }
-    .news2 img{
+    .recruit{
+        width: 100%;
+    }
+    .footermenu{
         display: none;
     }
-    .news2-text{
+    .footerlogo{
+        height: 100px;
         text-align: left;
-        line-height: 50px;
+        justify-content: initial;
     }
-    .copy{
-        display: none;
+    #CONTACTUS{
+        display: grid;
+        height: auto;
+        padding: 0;
+        width: 100%;
     }
-    .footer-end{
-        justify-content: center;
+    .TELL{
+        margin: 0;
     }
-    .footer-end img{
-        margin: 20px 20px;
+    .footerend{
+        display: grid;
+        padding: 0;
+        height: 100px;
+        justify-content: initial;
+        text-align: center;
     }
-  }
+}
+@media (max-width: 460px) {
+    .mainvisuail{
+        background-image: url(img/AdobeStock_283341560\ 2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 600px;
+    }
+    .mainvisuail h1{
+        font-size: 4rem;
+        margin-top: 150px;
+        width: 100%;
+    }
+    .maintext{
+        padding-top: 50px;
+        font-size: 0.8rem;
+    }
+}
