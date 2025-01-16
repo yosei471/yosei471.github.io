@@ -30,6 +30,9 @@ a{
     text-decoration: none;
     color: #484848;
 }
+button{
+    max-width: 200px;
+}
 p{
     color: #484848;
 }
@@ -216,7 +219,7 @@ h1{
 
 .recruit{
     padding: 50px;
-    width: 20%;
+    width: 50%;
 }
 .NEWS{
     display: flex;
@@ -263,7 +266,6 @@ footer{
 .footerend{
     display: flex;
     justify-content: space-between;
-    padding: 0 500px;
     height: 150px;
     align-items: center;
 }
@@ -277,9 +279,6 @@ footer{
     width: 100%;
     height: 250px;
     padding: 50px 0;
-}
-#CONTACTUS{
-    width: 80%;
 }
 .CONTACTUS h2,h3,p{
     width: 100%;
@@ -308,6 +307,9 @@ footer{
     h2{
         font-size: 1.5rem;
         width: 100%;
+    }
+    p{
+        /* max-width: 500px; */
     }
     .mainvisuail{
         width: 80%;
@@ -375,6 +377,9 @@ footer{
         width: 100%;
         margin: 0;
     }
+    .RECRUITimg{
+        width: 50%;
+    }
     .recruit{
         width: 100%;
     }
@@ -403,7 +408,50 @@ footer{
         text-align: center;
     }
 }
-@media (max-width: 460px) {
+@media (max-width: 1000px) {
+    header img{
+        margin: 0;
+        width: 120px;
+    }
+    #main{
+        width: 100%;
+    }
+    .maintext{
+        padding-top: 50px;
+        width: 100%;
+    }
+    .PRODUCT{
+        width: 100%;
+        padding: 100px;
+    }
+    .product{
+        width: 80%;
+    }
+    .ABOUTUS{
+        width: auto;
+    }
+    .about{
+        text-align: center;
+    }
+    .about p{
+        max-width: none;
+    }
+    .CONTACTUS p{
+        max-width: 500px;
+    }
+    .PRODUCTimg{
+        width: 100%;
+        min-width: 200px;
+        padding: 0;
+    }
+    .footerlogo{
+        justify-content: center;
+    }
+}
+@media (max-width: 530px) {
+    h2,h3{
+        width: 100%;
+    }
     .mainvisuail{
         background-image: url(img/AdobeStock_283341560\ 2.png);
         background-repeat: no-repeat;
@@ -417,6 +465,52 @@ footer{
     }
     .maintext{
         padding-top: 50px;
+        font-size: 0.8rem;
+    }
+    #CONTACTUS{
+        justify-content: initial;
+        width: 100%;
+    }
+    .CONTACTUS{
+        width: 100%;
+    }
+    .PRODUCT{
+        /* width: 100%; */
+        margin: 0;
+        padding: 0;
+        height: auto;
+        text-align: center;
+    }
+    .PRODUCTimg{
+        padding: 0;
+        display: none;
+    }
+    .PRODUCTimg img{
+   
+        /* width: 50%;
+        padding: 5px;
+        text-align: center; */
+    }
+    .about h2{
+        margin-top: 50px;
+    }
+    .footerlogo img{
+        width: 20%;
+    }
+    .footerlogo p{
+        width: 100%;
+        font-size: 0.8rem;
+        padding-left: 10px;
+    }
+    .TELL{
+        width: 200px;
+        
+    }
+    .TELL h2{
+        font-size: 1rem;
+    }
+    .content a{
+        margin: 0;
         font-size: 0.8rem;
     }
 }
