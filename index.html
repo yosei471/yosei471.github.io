@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css"
     />
     <link rel="stylesheet" href="style.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"> -->
     <title>仮大山株式会社</title>
 </head>
 <body>
@@ -13,13 +14,38 @@
         <img src="img/AdobeStock_684461621.jpeg" alt="大山株式会社ロゴ">
         <nav>
         <ul>
-            <li><a href="">製品情報</a></li>
-            <li><a href="">私たちについて</a></li>
-            <li><a href="">会社概要</a></li>
-            <li><a href="">採用情報</a></li>
-            <li class="contactBG"><a href="" style="color:#fff;">お問い合わせ</a></li>
+            <li><a href="#ABOUTUS">私たちについて</a></li>
+            <li><a href="#PRODUCT">製品情報</a></li>
+            <li><a href="#OURSERVICE">サービス</a></li>
+            <li><a href="#RECRUIT">採用情報</a></li>
+            <li class="contactBG"><a href="#CONTACTUS" style="color:#fff;">お問い合わせ</a></li>
         </ul>
-    </nav>
+        <!-- <nav class="navbar  navbar-expand-lg bg-body-tertiary w-100">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                仮大山株式会社</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto  mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav> -->
     </header>
     <main id="main" class="wrapper">
         <div class="mainvisuail">
@@ -27,41 +53,50 @@
                 <br>
                 Life
                 <br>
-                Future</h1>
+                Technology</h1>
         </div>
         <div class="colorbg"></div>
-        <!-- <div class="overlap">
-            <p class="overlap_front">重なり部分とはみだし部分で要素の色を変えるテクニック</p>
-            <div class="overlap_back"></div>
-          <div> -->
     </main>
-    <section class="main2"  class="wrapper">
+    <section class="main2" >
         <div class="maintext">
-            <h2>快適な環境と安全・安心な<br>
-                インフラを支える<br>
-                光伸の風水力機器</h2>
+            <h2>確かな開発力で世の中を変える<br>
+                仮大山株式会社の<br>
+                テクノロジー</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae itaque maiores reiciendis, explicabo aliquam nulla repellendus voluptate natus doloribus assumenda dolor commodi possimus ex! Voluptate veniam iure voluptatem at repellat.</p>
             <button>
                 View more
             </button>
+
+
+
+
+            <div class="viewmore">
+            <a href="">
+                <span>view more</span>
+            </a>
+            </div>
+
+
+
         </div>
         <div class="mainimg">
-            <img src="img/AdobeStock_283341560 2.png" alt="">
+            <img src="img/AdobeStock_272779037.jpeg" alt="">
         </div>
     </section>
-    <section class="ABOUTUS">
+    <section id="ABOUTUS" class="ABOUTUS">
         <div>
-            <img src="img/AdobeStock_283341560 2.png" alt="">
+            <img src="img/AdobeStock_483553206.jpeg" alt="">
         </div>
         <div class="about">
-            <h2>ABOUT US</h2>
+            <a href="aboutus.html"><h2>ABOUT US</h2></a>
             <h3>仮大山株式会社</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo laborum, vel sint eius et voluptatem magni quo non deserunt quas quod dolore officia quisquam quibusdam explicabo odio, minus architecto fuga?<br>
             </p>
             <button>View more</button>
+            <!-- <button onclick="loction.href='リンク先のURL'">->location</button> -->
         </div>
     </section>
-    <section class="PRODUCT">
+    <section id="PRODUCT" class="PRODUCT">
         <div class="product">
             <h2>PRODUCT</h2>
             <h3>製品情報</h3>
@@ -69,24 +104,24 @@
             <button>View more</button>
         </div>
         <div class="PRODUCTimg">
-            <img src="img/AdobeStock_283341560 2.png" alt="">
-            <img src="img/AdobeStock_283341560 2.png" alt="">
-            <img src="img/AdobeStock_283341560 2.png" alt="">
-            <img src="img/AdobeStock_283341560 2.png" alt="">
+            <img src="img/Frame 4.png" alt="">
+            <img src="img/Frame 4.png" alt="">
+            <img src="img/Frame 4.png" alt="">
+            <img src="img/Frame 4.png" alt="">
             <!-- 画像4枚配置してwrapさせる -->
         </div>
     </section>
-    <section class="OURSERVICE">
+    <section id="OURSERVICE" class="OURSERVICE">
         <div>
             <h2>OUR SERVICE</h2>
             <h3>製品情報</h3>
         </div>
         <div class="SERVICEimg">
-            <img src="img/AdobeStock_283341560 2.png" alt="">
-            <img src="img/AdobeStock_283341560 2.png" alt="">
+            <img src="img/AdobeStock_298577800.jpeg" alt="">
+            <img src="img/AdobeStock_524923986.jpeg" alt="">
         </div>
     </section>
-    <section class="RECRUIT">
+    <section id="RECRUIT" class="RECRUIT">
         <div class="recruit">
             <h2>RECRUIT</h2>
             <h3>採用情報</h3>
@@ -157,5 +192,6 @@
             </div>
         
     </footer>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script> -->
 </body>
 </html>
