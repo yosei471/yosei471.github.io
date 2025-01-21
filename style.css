@@ -341,14 +341,11 @@ footer{
         font-size: 1.5rem;
         width: 100%;
     }
-    p{
-        /* max-width: 500px; */
-    }
     .mainvisuail{
         width: 80%;
     }
     .mainvisuail h1{
-        font-size: 6rem;
+        font-size: 3rem;
         margin-top: 150px;
         width: 100%;
     }
@@ -450,8 +447,7 @@ footer{
         justify-content: initial;
         text-align: center;
     }
-}
-@media (max-width: 1000px) {
+
     header img{
         margin: 0;
         width: 120px;
@@ -460,8 +456,7 @@ footer{
         width: 100%;
     }
     .maintext{
-        padding-top: 50px;
-        text-align: center;
+        padding: 50px;
     }
     .PRODUCT{
         width: 100%;
@@ -477,7 +472,7 @@ footer{
     }
     .ABOUTUS{
         width: auto;
-        padding: 10px 0;
+        padding: 50px;
     }
     .ABOUTUS div{
         padding: 0;
@@ -513,7 +508,7 @@ footer{
         height: 600px;
     }
     .mainvisuail h1{
-        font-size: 4rem;
+        font-size: 2rem;
         margin-top: 150px;
         width: 100%;
     }
@@ -522,6 +517,7 @@ footer{
         font-size: 0.8rem;
         text-align: initial;
     }
+
     #CONTACTUS{
         justify-content: initial;
         width: 100%;
@@ -537,6 +533,11 @@ footer{
     .PRODUCTimg{
         padding: 0;
         display: none;
+    }
+
+    .about{
+        text-align: initial;
+
     }
     .about h2{
         margin-top: 50px;
