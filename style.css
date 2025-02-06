@@ -56,3 +56,14 @@ footer{
 textarea{
     height: 300px;
 }
+
+@media screen and (max-width:992px) {
+    ul li:nth-child(6){
+        margin: 0;
+    }
+    .youtubeimg{
+        margin: 0;
+        text-align: start;
+        width: 5%;
+    }
+}
