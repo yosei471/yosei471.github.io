@@ -51,7 +51,7 @@
 </nav> -->
 
 <!-- ハンバーガー -->
-  <div class="header__container">
+
     <button type="button" class="hamburger">
       <span></span>
     </button>
@@ -63,7 +63,7 @@
         <li><a href="#CONTACT">CONTACT</a></li>
       </ul>
     </nav>
-  </div>
+
 
 
 
@@ -71,86 +71,71 @@
  
 
 
-<img class="mainbg" src="img/Rectangle 12.png" alt="">
+<!-- <img class="mainbg" src="img/Rectangle 12.png" alt=""> -->
+
 <main id="main" class="mt-5">
+
   <div class="container-fluid">
+    <div class="container-fluid d-flex justify-content-center mb-5">
   <img src="img/Group 26.png" alt="">
+  </div>
+
+
   <div class="row text-center">
-    <div  class="col-4">
+
+    <div  class="col-lg">
       <img src="img/Group 11.png" alt="">
       <p>SNS</p>
       <p>SNS・blogでweb技術について発信中</p>
     </div>
-    <div class="col-4 g-0">
+
+    <div class="col-lg">
       <img class="align-items-center" src="img/Group 12.png" alt="">
       <p>イラスト</p>
       <p>現在は背景美術を勉強中。</p>
     </div>
-    <div class="col-4">
+
+    <div class="col-lg">
       <img src="img/Group 14.png" alt="">
       <p>動画編集</p>
       <p>PV制作、アニメーションMV制作</p>
     </div>
+
   </div>
+
+
+
   <div class="row text-center my-5">
-    <div  class="col-4">
+
+    <div  class="col-lg">
       <img src="img/Group 15.png" alt="">
       <p>コーディング</p>
       <p>HTML/CSS/javascriptなど。モダンな言語も習得中です。</p>
     </div>
-    <div class="col-4">
+
+    <div class="col-lg">
       <img src="img/Group 17.png" alt="">
       <p>webデザイン制作</p>
       <p>オリジナリティーあふれるデザインを目指す。審美眼を磨く。</p>
     </div>
-    <div class="col-4">
+
+    <div class="col-lg">
       <img src="img/Group 36.png" alt="">
       <p>音源活動</p>
       <p>楽器はギター。宅録してコンテスト出場を経験した。</p>
     </div>
+
   </div>
+  
   </div>
-  <!-- <div id="PROFILE" class="container-fluid"></div>
-    <img class="mainBG" src="img/Rectangle 12.png" alt="">
-    <img class="d-block mx-auto" src="img/Group 26.png" alt="">
-    <ul class="mt-5">
-        <li><img src="img/Group 11.png" alt="">
-            <p>webデザイン<br>
-                <br>
-                オリジナリティーあふれるデザインを目指して日々精進！
-            </p></li>
-        <li><img src="img/Group 11.png" alt="">
-            <p>SNS<br>
-                <br>
-                SNSアカウントに音源やイラストを更新中。
-            </p></li>
-        <li><img src="img/Group 12.png" alt="">
-            <p>イラスト<br>
-                <br>
-                現在は背景美術を勉強中。
-            </p></li>
-        <li><img src="img/Group 14.png" alt="">
-            <p>動画編集<br>
-                <br>
-                PV制作、アニメーションMV制作
-            </p></li>
-        <li><img src="img/Group 15.png" alt="">
-            <p>コーディング<br>
-                <br>
-                HTML/CSS/javascriptなど。モダンな言語も習得中です。
-            </p></li>
-        <li><img src="img/Group 17.png" alt="">
-            <p>webデザイン制作<br>
-                <br>
-                日々webデザインに目を遠し、審美眼をみがく。
-            </p></li>
-    </ul>
-    </div> -->
+
 </main>
 
 
+<div class="container-fluid">
+<img class="portfolio-img mb-5 d-flex justify-content-center" src="img/Group 27.png" alt="">
+</div>
 
-<img class="portfolio-img mb-5" src="img/Group 27.png" alt="">
     <div id="portfolio" class="container-fluid mt-5">
       <ul>
         <li>
@@ -170,12 +155,26 @@
         </li>
       </ul>
 
+      <!-- HTML内にスクリプトを追加
+<script>
+  document.querySelectorAll('portfolio ul li').forEach(item => {
+    // 任意の条件を設定して表示/非表示を切り替える
+    if (item.innerText === '2,3') {
+      item.style.display = 'none';
+    }
+  });
+</script> -->
+
 
     </div>
 
-    <div id="workflow" class="container-fluid mb-5">
+
+
+    <div id="workflow" class="container-fluid text-center mb-5">
+
         <h2 class="text-light d-flex justify-content-center mb-5">制作のながれ</h2>
-        <div class="step d-flex gap-5 justify-content-center text-center">
+      <div class="row">
+        <div class="col-sm">
         <div>
             <p>STEP</p>
             <h1>01</h1>
@@ -183,8 +182,14 @@
               コーディングを意識した<br>
               デザインを制作する。</p>
         </div>
-        <p class="yamakakko">></p>
-<div>
+        </div>
+
+        <div  class="col-sm yamakakko d-flex justify-content-center">
+        <p>></p>
+        </div>
+
+        <div class="col-sm">
+        <div>
             <p>STEP</p>
             <h1>02</h1>
             <p>HTML/CSS/bootstrapなどで<br>
@@ -192,14 +197,25 @@
               javascriptで動的な処理も行う<br>
           </p>
         </div>
-        <p class="yamakakko">></p>
-<div>
+        </div>
+
+        <div  class="col-sm yamakakko d-flex justify-content-center">
+        <p>></p>
+        </div>
+
+        <div class="col-sm">
+        <div>
             <p>STEP</p>
             <h1>03</h1>
             <p>githubでデプロイ<br></p>
         </div>
+        </div>
+
+
     </div>
     </div>
+
+
 
     <section id="CONTACT">
       <h1>お問い合わせ</h1>
@@ -211,9 +227,9 @@
             <label for="exampleFormControlTextarea1" class="form-label">本文</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"  style="height: 200px" placeholder="こちらにお問い合わせ内容を記入してください。"></textarea>
           </div>
-          <div class="d-grid gap-2 col-2 mx-auto">
-  <button class="btn btn-primary my-5" type="button">送信</button>
-</div>
+          <div class="d-grid gap-2 col-2 mx-auto">  
+          <button class="btn btn-primary my-5" type="button">送信</button>
+          </div>
         <!-- <form action="">
             <label for=""></label>
             <label for=""></label>
@@ -222,9 +238,9 @@
     </section>
 
 <footer id="footer" class="container-fluid">
-    <img src="img/Group 44.png" alt="">
+    <!-- <img src="img/Group 44.png" alt="">
     <img class="thankyouimg" src="img/Thank you for watching.png" alt="">
-    <img src="img/Group 45.png" alt="">
+    <img src="img/Group 45.png" alt=""> -->
 </footer>
 
 
