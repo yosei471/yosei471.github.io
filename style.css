@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-/*     outline: 1px solid magenta; */
+    /* outline: 1px solid magenta; */
 }
 ul{
     padding: 0;
@@ -37,9 +37,13 @@ nav ul{
 nav img{
     width: 10%;
 }
+nav ul{
+  display: flex;
+  justify-content: space-between;
+}
 nav ul li{
     list-style: none;
-    margin-left: 10%;
+    margin: 0 10px 0 20px;
 }
 nav ul li a{
     display: block;
@@ -57,6 +61,7 @@ nav ul li a{
   padding: 0 25px;
   margin-right: auto;
   margin-left: auto;
+  position: relative;
 }
 
 
@@ -66,7 +71,7 @@ nav ul li a{
 .hamburger {
   width: 50px;
   position: absolute;
-  z-index: 1;
+  z-index: 10;
   top: 10%;
   right: 10%;
   appearance: none;
@@ -107,8 +112,13 @@ nav ul li a{
 /* ===============================================
 メニューのスタイリング
 =============================================== */
+/* .header__container nav{
+  position: absolute;
+  z-index: 3;
+} */
 .nav {
   position: fixed;
+  z-index: 5;
   width: 80%;
   height: 100vh;
   top: 0%;
@@ -117,6 +127,7 @@ nav ul li a{
   padding: 50px 0;
   transition: all 0.5s;
   border-top: 1px solid #fff;
+
 }
 .nav ul{
     display: grid;
@@ -143,8 +154,13 @@ nav ul li a{
 #main{
     width: 100%;
     position: relative;
-    height: 50%;
-    padding-top: 200px;
+    height: 100%;
+    padding: 200px 0 400px 0;
+    background-image: url(img/Rectangle\ 12.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
 }
 .mainbg{
     position: absolute;
@@ -175,6 +191,13 @@ nav ul li a{
 #portfolio ul li img{
     width: 100%;
 }
+
+/* #portfolio ul li:nth-child(n+1):nth-child(-n+4) {
+    display: none; 
+ }
+ #portfolio ul::after{
+  display: ;
+ } */
 
 
 
@@ -213,16 +236,29 @@ nav ul li a{
     margin-bottom: 100px;
     text-align: center;
 }
+
+
+
+
+/* footer */
+
 #footer{ 
-    width: 100%;
-    position: relative;
+  width: 100%;
+  aspect-ratio: 2/1;
+    /* position: relative; */
+    background-image:
+    url(img/Thank\ you\ for\ watching！！.png), 
+    url(img/Group\ 45.png),
+    url(img/Group\ 44.png);
+    background-repeat: no-repeat;
+    background-position: center,center,center;
+    background-size: 50%,90%,contain;
 }
-#footer img{
+/* #footer img{
     width: 100%;
 }
 #footer img:first-child{
-    /* position: absolute; */
-    /* z-index: 1; */
+
     width: 100%;
 
 }
@@ -239,7 +275,7 @@ nav ul li a{
     z-index: 100;
     top: 60%;
     left: 0%;
-}
+} */
 
 
 
@@ -253,13 +289,45 @@ nav ul li a{
   .header-nav li{
     display: none;
   }
+  #header{
+    margin-bottom: 100px;
+    aspect-ratio: none;
+    
+  }
+  /* .mainbg{
+    height: 100%;
+    display: none;
+  } */
+  main::after{
+    background-image: url(img/sp\ portfolio.png);
+    background-color: aqua;
+  }
 
 }
+
 @media screen and (min-width: 1200px) {
 
   .hamburger{
     display: none;
   }
 
+
+}
+@media screen and (max-width: 576px) {
+  .yamakakko{
+    transform: rotate(90deg);
+  }
+  #footer{ 
+  width: 100%;
+  aspect-ratio: 2/1;
+    /* position: relative; */
+    background-image:
+    url(img/Thank\ you\ for\ watching！！.png), 
+    url(img/Group\ 45.png),
+    url(img/Group\ 44.png);
+    background-repeat: no-repeat;
+    background-position: center,left,center;
+    background-size: 95%,cover,contain;
+}
 }
 
