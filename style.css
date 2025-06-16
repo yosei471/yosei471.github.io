@@ -12,6 +12,7 @@ ul{
 body{
     width: 100%;
 }
+
 #header{
     width: 100%;
     background-image: 
@@ -173,8 +174,8 @@ nav ul li a{
     gap: 50px;
     position: relative;
     height: 100%;
-    padding-top: 20%;
-    margin-bottom: 300px;
+    padding-top: 10%;
+    margin-bottom: 100px;
 }
 #portfolio ul{
     list-style: none;
@@ -191,13 +192,12 @@ nav ul li a{
 #portfolio ul li img{
     width: 100%;
 }
+.viewmore{
+  justify-content: center;
+  align-items: center;
+  background-color: #0f5474;
+}
 
-/* #portfolio ul li:nth-child(n+1):nth-child(-n+4) {
-    display: none; 
- }
- #portfolio ul::after{
-  display: ;
- } */
 
 
 
@@ -302,6 +302,28 @@ nav ul li a{
     background-image: url(img/sp\ portfolio.png);
     background-color: aqua;
   }
+    #main{
+    width: 100%;
+    position: relative;
+    height: 100%;
+    padding: 200px 0 250px 0;
+    background-image: url(img/Group\ 72.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  #main div p:nth-child(3){
+    margin-bottom: 10%;
+  }
+  #portfolio ul li:nth-child(n+1):nth-child(-n+4) {
+    display: none; 
+ }
+  #portfolio ul::after{
+  display: none;
+ }
+ .portfolio-img{
+  margin-top: 10%;
+ }
 
 }
 
@@ -310,12 +332,15 @@ nav ul li a{
   .hamburger{
     display: none;
   }
-
+  
 
 }
 @media screen and (max-width: 576px) {
+
   .yamakakko{
     transform: rotate(90deg);
+    display: flex;
+    justify-content: center;
   }
   #footer{ 
   width: 100%;
@@ -330,4 +355,5 @@ nav ul li a{
     background-size: 95%,cover,contain;
 }
 }
+
 
